@@ -1,0 +1,331 @@
+@import "./template";
+@import "./vars";
+
+header {
+    .header_container {
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width:$mobile) {
+            min-height: 50px;
+        }
+
+
+        .logo{
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+            margin-left: 20px;
+            img {
+            @media (max-width:$mobile){
+                width: 66px;
+            }
+        }
+        }
+
+    .nav {
+        @media (max-width: $tablet) {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            margin-right: 80px;
+            color: #4C4C4B;
+            font-size: 23px;
+            font-family: $font;
+            font-weight: 700;
+            word-wrap: break-word;
+
+        }
+        :last-child {
+            margin-right: 0;
+        }
+        }
+    }
+        .burger_menu{
+            display: none;
+            
+            @media (max-width:$tablet) {
+                display: block;
+            }
+            @media (max-width:$mobile){
+                width: 32px;
+            }
+            
+        }
+        .icons {
+            img {
+            @media (max-width:$tablet){
+                width: 34px;
+            } 
+            @media (max-width:$mobile){
+                width: 22px;
+            } 
+        }           
+        }
+    }
+.promo {
+        min-height: 30px;
+        background-color: black;
+        text-align: center;
+        padding: 5px;
+        
+        a {
+            color: #fffffed8;
+            font-size: 26px;
+            font-family: $font;
+            font-weight: 700;
+            text-decoration: none;
+            @media (max-width:$mobile){
+                font-size: 12px;                            
+            }
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+}
+
+main{
+
+    .main_title {
+        background-image: url(/new_project/assets/1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .main_title_container{
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: start;
+
+            h1 {
+                max-width: 450px;
+                color: white;
+                font-size: 60px;
+                font-family: $font;
+                font-weight: 700;
+                word-wrap: break-word;
+                margin-left: 40px;
+                @media (max-width:$mobile) {
+                    max-width: 200px;
+                    font-size: 40px;                            
+                }
+            }
+        }
+    }
+        .description {
+            color: #4C4C4B;
+            font-size: 50px;
+            font-family: $font;
+            font-weight: 700;
+            word-wrap: break-word;
+            padding-top: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+            @media (max-width:$mobile){
+                font-size: 28px;
+            }
+        }
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 25px;
+            margin-bottom: 30px;
+            @media (max-width:$tablet) {
+                flex-wrap: wrap;
+                width: 800px;
+                row-gap: 25px;
+                justify-content: center;
+            }
+            @media (max-width:$mobile) {
+                width: 350px;
+                margin-left: 20px;
+            }
+
+            .card1 {
+                max-width: 450px;
+                max-height: 450px;
+                border: 8px solid rgba(225, 165, 157, 0.738);
+                margin-left: 150px;
+                @media (max-width:$tablet) {
+                    margin-left: 40px;
+                    @media (max-width:$mobile) {
+                    border: 10px solid rgba(225, 165, 157, 0.738)
+                    }
+                }
+                }
+                img {
+                    max-width: 100%;
+                    min-height: 100%;
+                    }
+                }
+            }
+            .card2 {
+                max-width: 500px;
+                text-align: center;
+                margin-right: 130px;
+                @media (max-width:$tablet){
+                    margin-left: 170px;
+                }
+                h3 {
+                    color: #4C4C4B;
+                    font-size: 30px;
+                    font-family: $font;
+                    font-weight: 700;
+                    word-wrap: break-word;
+                    margin-bottom: 50px;
+                    padding: 0 25px 0 25px;
+                    @media (max-width:$mobile) {
+                        width: 300px;
+                        font-size: 26px;
+                    }
+                }
+                p {
+                    color: #4C4C4B;
+                    font-size: 22px;
+                    font-family: $font;
+                    font-weight: 700;
+                    word-wrap: break-word;
+                    margin-bottom: 40px;
+                    @media (max-width:$mobile) {
+                        width: 300px;
+                        font-size: 19px;
+                    }
+                }
+                button {
+                    max-width: 300px;
+                    background-color: rgba(225, 165, 157, 0.738);
+                    border-radius: 80px;
+                    border: transparent;
+                    color: white;
+                    font-size: 20px;
+                    font-family: $font;
+                    font-weight: 700;
+                    line-height: 21px;
+                    padding: 10px 30px 10px 30px;
+                    @media (max-width:$mobile){
+                        width: 150px;
+                        font-size: 9px;
+                    }
+
+                    button:hover {
+                        cursor: pointer;
+                    }
+                }
+            }        
+    
+    footer {
+        .footer_container {
+            background-color: rgba(248, 204, 198, 0.503);
+            min-height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #4C4C4B;
+            font-family: $font;
+            font-weight: 700;
+            border-top: 8px solid #4C4C4B;
+
+            @media (max-width:$mobile) {
+            border-top: 4px solid #4C4C4B;
+            }
+
+            .service{
+                margin: 25px;
+
+                @media (max-width:$mobile) {
+                    width: 120px;
+                    text-wrap: nowrap;
+                }
+            
+            h3 {
+                font-size: 28px;
+                padding-bottom: 15px;
+
+                @media (max-width:$mobile) {
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                }
+            }
+        
+        a {
+            font-size: 20px;
+            font-weight: 400;
+            color: #4C4C4B;
+            word-wrap: break-word;
+            text-decoration: none;
+            padding-bottom: 5px;
+
+            @media (max-width:$mobile) {
+                font-size: 14px;
+            }
+        }
+    }
+    .contacts {
+        max-width: 350px;
+        margin-left: 70px;
+        margin-top: -30px;
+
+        @media (max-width:$mobile){
+            margin-left: 20px;
+            margin-top: 18px;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-bottom: 50px;
+            padding-left: 70px;
+
+            @media (max-width:$mobile) {
+                font-size: 16px;
+                margin-bottom: 10px;
+                padding-left: 8px;
+            }
+        }
+        a {
+            padding: 30px;
+            img {
+                @media (max-width:$mobile) {
+                    width: 15px;
+                    padding-bottom: 10px;
+                }
+
+            }
+            
+        }
+    }
+    .links {
+        margin: 25px;
+        @media (max-width:$mobile){
+            padding-top: 20px;
+        }
+
+            
+            h3 {
+                font-size: 28px;
+                padding-bottom: 15px;
+                @media (max-width:$mobile) {
+                    font-size: 18px;
+                }
+            }
+        
+        a {
+            font-size: 20px;
+            font-weight: 400;
+            color: #4C4C4B;
+            word-wrap: break-word;
+            text-decoration: none;
+            padding-bottom: 5px;
+            @media (max-width:$mobile) {
+                font-size: 14px;
+                padding-bottom: 0;
+            }
+        }
+    }
+    }
+    }
